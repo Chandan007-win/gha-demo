@@ -2,6 +2,12 @@ name: deploying
 on: push
 
 jobs:
+  name:
+   runs-on: ubuntu-latest
+   steps:
+     - name: this will print my name
+       run: echo "Hello, ${{ vars.MY_NAME }}"
+
   build:
    runs-on: ubuntu-latest
    steps:
