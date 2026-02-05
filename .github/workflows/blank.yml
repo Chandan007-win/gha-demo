@@ -4,16 +4,16 @@ jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - name: build
+     - name: build step
        run: echo "this is to build"
    test:
      runs-on: ubuntu-latest
      steps:
-      - name: test
+      - name: test step
         run: echo "this is to test"
     deploy:
        runs-on: ubuntu-latest
        steps:
-         - name: deploy
+         - name: deploy step
            run: echo "this is to deploy"
            
