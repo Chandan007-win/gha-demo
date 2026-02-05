@@ -1,19 +1,23 @@
 name: Hello World
-on: workflow_dispatch
+
+on:
+  workflow_dispatch:
+
 jobs:
   build:
     runs-on: ubuntu-latest
     steps:
-     - name: build step
-       run: echo "this is to build"
-   test:
-     runs-on: ubuntu-latest
-     steps:
+      - name: build step
+        run: echo "this is to build"
+
+  test:
+    runs-on: ubuntu-latest
+    steps:
       - name: test step
         run: echo "this is to test"
-    deploy:
-       runs-on: ubuntu-latest
-       steps:
-         - name: deploy step
-           run: echo "this is to deploy"
-           
+
+  deploy:
+    runs-on: ubuntu-latest
+    steps:
+      - name: deploy step
+        run: echo "this is to deploy"
